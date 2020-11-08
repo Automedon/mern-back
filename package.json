@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon --watch ./**/*.ts --ignore ./**/*.spec.ts --exec ts-node ./index.ts"
+    "build": "tsc",
+    "start": "nodemon ./dist/index.js",
+    "startTs": "nodemon --watch ./**/*.ts --ignore ./**/*.spec.ts --exec ts-node ./index.ts"
   },
   "keywords": [],
   "author": "",
